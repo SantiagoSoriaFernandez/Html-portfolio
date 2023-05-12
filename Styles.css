@@ -1,0 +1,446 @@
+/*manda a llamar a la fuente desde la carpeta fonts*/
+@font-face {
+    font-family: 'poppinsRegular';
+    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+   
+  }
+@font-face {
+    font-family: 'poppinsBold';
+  src: url('fonts/Poppins-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'poppinsSemiBold';
+    src: url('fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
+/*=====================animaciones===============================*/
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}
+@keyframes scaleAnimationOut {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+ 
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 50%;
+  }
+}
+
+@keyframes dropAnimation {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 80%;
+  }
+}
+
+
+/*=================================================================*/
+
+.header nav {
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+ 
+  }
+ 
+  .navbar-logo{
+    width: 3rem;
+    margin: 5px;  
+}
+
+
+
+.icons{
+width: 2rem;
+height: auto;
+color:  rgba(72, 70, 76, 1);
+margin-right: 1rem;
+}
+
+
+a{
+  color: #fff;
+  text-decoration: none;
+  
+  
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+  }
+
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  
+  footer div{
+  margin: 10px;
+  }
+
+
+.social-icons img{
+  margin-right: 30px;
+  animation: scaleAnimation 0.4s forwards;
+}
+
+  
+/*====================================================================================================*/
+
+body {
+    font-family:'poppinsRegular';
+    color:  rgba(72, 70, 76, 1);
+    background-color: rgba(255, 255, 255, 1);
+    
+    font-size: 16px;
+    margin: 0;
+   
+    }
+   
+
+  .header a{
+    text-decoration: none;
+    margin: 3rem;
+    color:  rgba(72, 70, 76, 1);
+  }
+
+  p{
+    margin: 0px;
+    margin-bottom:  40px;
+    
+  }
+
+  h1{
+    font-family:'poppinsSemiBold';
+    color: rgba(29, 27, 32, 1);
+    font-size: 57px;
+    margin: 0px;
+    margin-bottom:  0px;
+  
+  }
+
+  h2{
+    font-family:'poppinsRegular';
+    color: rgba(50, 47, 55, 1);
+    font-size: 52px;
+    margin: 0px;
+    margin-bottom:  40px;   
+   
+  }
+
+  .intro h1 {
+
+    animation: fadeIn 1.5s forwards;
+    
+
+  }
+  .intro h2 {
+   
+    animation: fadeIn 2s forwards;
+
+  }
+  .intro p {
+    animation: fadeIn 2.4s forwards;
+    
+
+  }
+
+  /*======================BOTONES=================================*/
+
+  button {
+    font-family:'poppinsRegular';
+    border-radius: 5px;    /* redondez del borde */
+    font-size: 16px; /* tamaño de la fuente del texto */
+    padding: 15px 50px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 2px 0px rgb(0, 0, 0);
+    margin: 0px;
+   
+  
+  }
+  .button-pink-call{
+    background-color: rgba(214, 58, 141, 1);
+    color:rgba(255, 255, 255, 1);
+    border: 0px solid #000000;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+    
+  }
+
+  .button-pink{
+    background-color: rgba(214, 58, 141, 1);
+    color:rgba(255, 255, 255, 1);
+    border: 0px solid #000000;
+ 
+    transition: background-color 0.5s ease;
+    margin-bottom:  200px;
+    margin-top: 100px;
+  }
+
+  .button-pink:hover {
+  
+    
+    animation: scaleAnimation 0.4s forwards;
+    background-color: rgba(29, 27, 32, 1);
+    
+  }
+  
+  .button-pink:active {
+    background-color: rgba(217, 79, 154, 1);
+    
+   
+  }
+
+  .button-pink-light{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(127, 103, 190, 1); /* color del borde */
+    
+    color:rgba(127, 103, 190, 1);
+    margin:  20px;
+   
+    margin-top: 100px;
+
+  }
+  .button-pink-light:hover {
+    background-color: rgba(127, 103, 190, 1);
+     /* color del borde */
+  
+    color:rgba(255, 255, 255, 1);
+    animation: scaleAnimation 0.4s forwards;
+    transition: background-color 0.5s ease;
+  }
+  
+  .button-pink-light:active {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(127, 103, 190, 1); /* color del borde */
+   
+    color:rgba(127, 103, 190, 1)
+  }
+
+  /*==========Sobre poner imagen con imagen y centrar===================================================================*/
+  
+  .profilefoto {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    border-radius: 600px;
+    height: 65%;
+    border: 3px solid rgba(255, 255, 255, 1);
+    animation: fadeIn 0.8s forwards;
+     
+  }
+  .trianglephoto {
+    opacity: 100%;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  
+    animation: dropAnimation 0.5s forwards, fadeOut 1s forwards;
+   
+    
+  }
+  .coverphoto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+    border-radius: 0px 0px 50px 50px;
+    animation: dropAnimation 0.8s forwards;
+    
+  }
+
+  .container-cover {
+    position:relative;
+    height: 50vh; 
+  
+    }
+
+  /*=====================para centrar==================================*/
+
+  .container-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    flex-wrap: nowrap;
+    
+   
+   }
+   .container-footer {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    text-align: left; 
+   
+   }
+
+
+  
+/*======================Cards=================================*/
+.flex-center{
+    display: flex;
+    flex-wrap: nowrap;   
+   
+}
+.flex-center img{
+  margin: 15px;
+  
+}
+
+  .card {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    border: 10px;
+  
+  }
+  .card img {
+    max-width: 23rem;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px;
+    margin-bottom: 40px;
+    animation-direction: normal;
+    
+    
+    
+  }
+  .card:hover {
+    animation: scaleAnimation 0.4s forwards;
+    
+     
+    
+  }
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+  }
+  .card p {
+    max-width: 25rem;
+    font-size: 16px;
+    margin-bottom: 5rem;
+  
+  }
+
+
+  .dropbtn {
+    background-color: rgb(246, 246, 246);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    
+    cursor: pointer;
+    
+  }
+  
+  /* Estilos para el menú desplegable */
+  .dropdown {
+    
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    
+    width: 15rem;
+    height: 30rem;
+ 
+    border-radius: 0px 0px 20px 0px;
+    background-color: rgba(29, 27, 32, 1);
+    display: none;
+    position: absolute;
+    z-index: 1;
+
+  }
+  
+  .dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/*=================================Responsive============================================*/
+
+  @media only screen and (max-width: 1100px) { /*Define el tamaño para pasar a escritorio*/
+ 
+  
+    .Desktopresponsive{
+      display: none;
+  
+    }
+  }
+  
+    
+    @media only screen and (min-width: 1099px) { /*Define el tamaño para pasar a escritorio*/
+    
+      .Movilresponsive{
+        display: none;
+    
+      }
+  
+    }
